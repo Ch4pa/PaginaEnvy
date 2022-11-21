@@ -6,10 +6,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Css/style.css">
     <title>ENVY</title>
 </head>
 
@@ -30,7 +31,7 @@
         </div>
 
 
-        <nav class="links nav">
+        <nav class="links nav ">
 
             <div class="logo">
 
@@ -39,13 +40,29 @@
             </div>
 
 
-            <ul class="menuItems">
-
-                <li class="nav__items"><a href="../inicio.html" class="items underline-hover">Inicio</a></li>
-                <li class="nav__items"><a href="./productos.html" class="items underline-hover">Productos</a></li>
-                <li class="nav__items"><a href="./contacto.html" class="items underline-hover">Contacto</a></li>
-                <li class="nav__items"><a href="./envios.html" class="items underline-hover">Envios</a></li>
-                <li class="nav__items"><a href="#" class="items underline-hover">FAQs</a></li>
+            <ul class="nav nav-pills d-flex flex-row">
+                <li class="nav-item">
+                    <a class="nav-link underline-hover" aria-current="page" href="../inicio.html">Inicio</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Productos
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Remeras</a></li>
+                        <li><a class="dropdown-item" href="#">Buzos</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link underline-hover" href="./contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link underline-hover" href="./envios.html">Envios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link underline-hover" href="./faqs.html">FAQs</a>
+                </li>
             </ul>
 
             <h4 class="paginaActual">FAQs</h4>
@@ -55,8 +72,8 @@
 
     <main class="mainFaqs">
         <section class="mainText">
-            <div class="faqsHead">
-                <h2>CÓMO COMPRAR:</H2><br><br>              
+            <div class="faqsHead d-flex aling-items-center">
+                <h2>CÓMO COMPRAR:</H2><br><br>
             </div>
             <div class="faqsMain">
                 <h4>Pasos de tu compra:</h4>
@@ -91,10 +108,10 @@
                     aseguras el stock correspondiente.
                 </p>
 
-            
-            
-                <br/>
-                    <p><strong>¿Que pasa si viene el correo y no estoy para recibirlo?</strong><br />
+
+
+                <br />
+                <p><strong>¿Que pasa si viene el correo y no estoy para recibirlo?</strong><br />
                     El pedido lo puede recibir cualquier persona mayor de 18 años que se encuentre en tu
                     domicilio. Podes hacer el seguimiento desde OCA ( envios dentro de Argentina) o desde DHL ( envios
                     internacionales) para poder ver donde se encuentra el pedido, y asi evitar perder la visita del
@@ -102,28 +119,29 @@
                     En caso de visita por parte del correo y que no haya alguien en el domicilio que lo pueda
                     recibir, queda en sucursal por 5 dias habiles para que lo retires personalmente. Luego de ese
                     plazo el paquete vuelve a nuestra oficina.<br /></p>
-                    <br />
+                <br />
 
-                    <p>
-                        <strong>¿Como se que dia me va a estar llegando?</strong><br />
+                <p>
+                    <strong>¿Como se que dia me va a estar llegando?</strong><br />
                     Apenas enviamos el paquete, llega por email el codigo de seguimiento.<br />
                     No te olvides de revisar Correo no deseado.
-                    </p>
-                    <br>
-                    <br>
+                </p>
+                <br>
 
-                    <p>
+
+                <p>
                     <strong>¿Que pasa si no recibo mi paquete?</strong><br />
                     El paquete cuando no es recibido por parte del cliente retorna a nuestra oficina. Luego, una vezque
                     llega a nuestra oficina se realiza el reintegro del monto de las prendas abonadas,
                     descontandose el 80% del valor del envio ( Servicio que Oca cobra por el retorno del paquete no
-                    recibido).<br />En el caso de haber comprado con la promocion de envio gratis se descontara tambien el valor del
+                    recibido).<br />En el caso de haber comprado con la promocion de envio gratis se descontara tambien
+                    el valor del
                     mismo.
-                    </p>
-                    <br />
+                </p>
+                <br />
 
-                    <p>
-                    <strong>¿Como funciona el envio gratis?</strong>
+                <p>
+                    <strong>¿Como funciona el envio gratis?</strong><br>
                     El envio gratis es seleccionando la opcion de Retiro en sucursal OCA de tu zona,
                     y superando el monto de compra de $12000.<br />
                     Se aplica unicamente a los pedidos retirados.<br />
@@ -136,7 +154,7 @@
                     <br />
 
                     ---
-                    </p>
+                </p>
             </div>
         </section>
 
@@ -145,7 +163,7 @@
     <footer class="piedepagina">
         <div class="contentfooter">
             <img src="../Assets/imagenes/logo fondo negro.jpg" class="imgFooter" alt="">
-        
+
             <ul class="menuItems2">
 
                 <li class="nav_items"><a href="../inicio.html" class="items2">Inicio</a></li>
@@ -156,15 +174,18 @@
             </ul>
         </div>
         <div class="boxRedes">
-            <a href="" class="itemsRedes" target="_blank"><img src="../Assets/imagenes/4096262.png" class="imgRedes" alt=""></a>
-            <a href="#" class="itemsRedes" target="_blank"><img src="../Assets/imagenes/icone-du-logo-whatsapp-noir.png" class="imgRedes" alt=""></a>
-            <a href="#" class="itemsRedes" target="_blank"><img src="../Assets/imagenes/20673 (1).png" class="imgRedes" alt=""></a>
+            <a href="https://www.instagram.com/envy.arg/" target="_blank" class="itemsRedes" target="_blank"><img src="../Assets/imagenes/4096262.png" class="imgRedes"
+                    alt=""></a>
+            <a href="#" class="itemsRedes" target="_blank"><img src="../Assets/imagenes/icone-du-logo-whatsapp-noir.png"
+                    class="imgRedes" alt=""></a>
+            <a href="#" class="itemsRedes" target="_blank"><img src="../Assets/imagenes/20673 (1).png" class="imgRedes"
+                    alt=""></a>
         </div>
         <div class="boxDerechos">
             <p>Copyright ENVY - 2022. Todos los derechos reservados.</p>
         </div>
     </footer>
-
+    <script src="../Js/bootstrap.bundle.min.js"></script>
 </body>
 
 

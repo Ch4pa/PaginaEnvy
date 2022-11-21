@@ -6,10 +6,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Css/style.css">
     <title>ENVY</title>
 </head>
 
@@ -39,13 +40,29 @@
             </div>
 
 
-            <ul class="menuItems">
-
-                <li class="nav__items"><a href="../inicio.html" class="items underline-hover">Inicio</a></li>
-                <li class="nav__items"><a href="./productos.html" class="items underline-hover">Productos</a></li>
-                <li class="nav__items"><a href="./contacto.html" class="items underline-hover ">Contacto</a></li>
-                <li class="nav__items"><a href="#" class="items underline-hover">Envios</a></li>
-                <li class="nav__items"><a href="./faqs.html" class="items underline-hover">FAQs</a></li>
+            <ul class="nav nav-pills d-flex flex-row">
+                <li class="nav-item">
+                    <a class="nav-link underline-hover" aria-current="page" href="../inicio.html">Inicio</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Productos
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Remeras</a></li>
+                        <li><a class="dropdown-item" href="#">Buzos</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link underline-hover" href="./contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link underline-hover" href="./envios.html">Envios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link underline-hover" href="./faqs.html">FAQs</a>
+                </li>
             </ul>
 
             <h4 class="paginaActual">Envios</h4>
@@ -57,9 +74,11 @@
 
 
     <main class="mainEnvio">
+        
         <div class="envio">
             <h2 class="preguntaDemora">¿Cuánto demora la entrega de mi pedido?</h2><br>
-            <p class="infDemora"> Argentina: Los envíos que tengan como destino CABA y Provincia de Buenos Aires serán entregados entre 1 y
+            <p class="infDemora"> Argentina: Los envíos que tengan como destino CABA y Provincia de Buenos Aires serán
+                entregados entre 1 y
                 7 días hábiles después de confirmado el empaquetado del pedido.
                 Algunos envíos pueden demorarse en días de alta demanda.
                 En caso de los envíos al interior del país, los mismos serán entregados entre 3 a 15 días hábiles una
@@ -68,32 +87,44 @@
                 hábiles/laborables una vez confirmado el empaquetado del pedido. Algunos envíos pueden verse demorados
                 durante la Pandemia de COVID-19.
         </div>
+        <br>
         <div class="envio">
             <h2 class="preguntaMedio">¿Cuál es el medio de entrega?</h2><br>
-            <p class="infEntrega">Las entregas a domicilio se realizan a través del servicio privado OCA, Mercado Envíos (Correo
+            <p class="infEntrega">Las entregas a domicilio se realizan a través del servicio privado OCA, Mercado Envíos
+                (Correo
                 Argentino/Andreani/WebPack/Urbano/Ocasa). Podés conocer tu Código Postal en el siguiente link
-            
-                Envíos a domicilio: Esta dirección de entrega será la que indiques en el proceso de compra. Considerá que deberás
-                haber cargado correctamente estos datos en tu perfil de nuestra Tienda Online. La dirección de entrega no tiene que
-                ser tu domicilio obligatoriamente, pero sí deberás tener acceso a éste para obtener tu pedido. El costo de envío
-                estará conforme a los precios vigentes del servicio privado OCA / Mercado Envíos según distancia, considerando el
+
+                Envíos a domicilio: Esta dirección de entrega será la que indiques en el proceso de compra. Considerá
+                que deberás
+                haber cargado correctamente estos datos en tu perfil de nuestra Tienda Online. La dirección de entrega
+                no tiene que
+                ser tu domicilio obligatoriamente, pero sí deberás tener acceso a éste para obtener tu pedido. El costo
+                de envío
+                estará conforme a los precios vigentes del servicio privado OCA / Mercado Envíos según distancia,
+                considerando el
                 origen en CABA (Buenos Aires). El costo de envío puede estar sujeto a promociones vigentes (**)
-                MERCADO ENVÍOS, información importante: si elegís esta opción de envío, antes de confirmar la compra, verificá que
-                la dirección de entrega coincida con la de tu usuario registrado en Mercado Libre/Mercado Pago para evitar
+                MERCADO ENVÍOS, información importante: si elegís esta opción de envío, antes de confirmar la compra,
+                verificá que
+                la dirección de entrega coincida con la de tu usuario registrado en Mercado Libre/Mercado Pago para
+                evitar
                 inconvenientes.
-                Envío a Sucursal OCA: Disponible en todo el territorio argentino donde se ubique una Sucursal OCA habilitada. Este
-                tipo de envío suele ser más económico y rápido. Pero no cuelgues en retirarlo porque solo lo retendrán por muy pocos
-                días antes que nos devuelvan el paquete. El costo de envío estará conforme a los precios vigentes del servicio
-                privado OCA según distancia, considerando el origen en CABA (Buenos Aires). El costo de envío puede estar sujeto a
+                Envío a Sucursal OCA: Disponible en todo el territorio argentino donde se ubique una Sucursal OCA
+                habilitada. Este
+                tipo de envío suele ser más económico y rápido. Pero no cuelgues en retirarlo porque solo lo retendrán
+                por muy pocos
+                días antes que nos devuelvan el paquete. El costo de envío estará conforme a los precios vigentes del
+                servicio
+                privado OCA según distancia, considerando el origen en CABA (Buenos Aires). El costo de envío puede
+                estar sujeto a
                 promociones vigentes (**)
-                </p>
+            </p>
         </div>
 
     </main>
-    
 
-    
-    
+
+
+
 
 
 
@@ -101,8 +132,8 @@
     <footer class="piedepagina">
         <div class="contentfooter">
             <img src="../Assets/imagenes/logo fondo negro.jpg" class="imgFooter" alt="">
-        
-        
+
+
             <ul class="menuItems2">
 
                 <li class="nav_items"><a href="../inicio.html" class="items2">Inicio</a></li>
@@ -113,7 +144,7 @@
             </ul>
         </div>
         <div class="boxRedes">
-            <a href="#" class="itemsRedes"><img src="../Assets/imagenes/4096262.png" class="imgRedes" alt=""></a>
+            <a href="https://www.instagram.com/envy.arg/" target="_blank" class="itemsRedes"><img src="../Assets/imagenes/4096262.png" class="imgRedes" alt=""></a>
             <a href="#" class="itemsRedes"><img src="../Assets/imagenes/icone-du-logo-whatsapp-noir.png"
                     class="imgRedes" alt=""></a>
             <a href="#" class="itemsRedes"><img src="../Assets/imagenes/20673 (1).png" class="imgRedes" alt=""></a>
@@ -123,7 +154,7 @@
         </div>
     </footer>
 
-
+    <script src="../Js/bootstrap.bundle.min.js"></script>
 
 
 </body>

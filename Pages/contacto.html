@@ -6,12 +6,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Css/style.css">
-    <link rel="stylesheet" href="../css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/2487ff0b58.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Css/style.css">
     <title>ENVY</title>
 </head>
 
@@ -41,12 +41,29 @@
             </div>
 
 
-            <ul class="menuItems">
-                <li class="nav__items"><a href="../inicio.html" class="items underline-hover">Inicio</a></li>
-                <li class="nav__items"><a href="./productos.html" class="items underline-hover">Productos</a></li>
-                <li class="nav__items"><a href="#" class="items underline-hover">Contacto</a></li>
-                <li class="nav__items"><a href="./envios.html" class="items underline-hover">Envios</a></li>
-                <li class="nav__items"><a href="./faqs.html" class="items underline-hover">FAQs</a></li>
+            <ul class="nav nav-pills d-flex flex-row">
+                <li class="nav-item">
+                    <a class="nav-link underline-hover" aria-current="page" href="../inicio.html">Inicio</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Productos
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./productos.html">Remeras</a></li>
+                        <li><a class="dropdown-item" href="./productos.html">Buzos</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link underline-hover" href="./contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link underline-hover" href="./envios.html">Envios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link underline-hover" href="./faqs.html">FAQs</a>
+                </li>
             </ul>
 
             <h4 class="paginaActual">Contacto</h4>
@@ -58,25 +75,36 @@
 
     <main class="mainContacto">
 
+
         <div class="page">
             <p class="pageText">Si tenes alguna pregunta o problema con la prenda, no dudes en contactarnos.</p>
         </div>
 
-        <form action="#" class="inputsContenedor">
-            <label for="" class="textform">Nombre Completo:</label>
-            <input type="text" name="Nombre Completo" required class="inputsform">
-            <label for="" class="textform">Email:</label>
-            <input type="email" name="Email" required class="inputsform">
-            <label for="" class="textform">Telefono:</label>
-            <input type="number" name="Telefono" required class="inputsform">
-            <label for="" class="textform">Mensaje:</label>
-            <input type="text" name="Mensaje" required class="inputsform">
+        <div class="container  ">
 
-        </form>
-
-        <div class="boxButton">
-            <button type="submit" class="inputsButton">Enviar</button>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Nombre Completo</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Telefono</label>
+                <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
         </div>
+        <button type="button" class="btn btn-primary"
+            style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Enviar
+        </button>
+
+
+
     </main>
 
     <footer class="piedepagina">
@@ -93,7 +121,7 @@
             </ul>
         </div>
         <div class="boxRedes">
-            <a href="#" class="itemsRedes"><img src="../Assets/imagenes/4096262.png" class="imgRedes" alt=""></a>
+            <a href="https://www.instagram.com/envy.arg/" target="_blank" class="itemsRedes"><img src="../Assets/imagenes/4096262.png" class="imgRedes" alt=""></a>
             <a href="#" class="itemsRedes"><img src="../Assets/imagenes/icone-du-logo-whatsapp-noir.png"
                     class="imgRedes" alt=""></a>
             <a href="#" class="itemsRedes"><img src="../Assets/imagenes/20673 (1).png" class="imgRedes" alt=""></a>
@@ -102,7 +130,7 @@
             <p>Copyright ENVY - 2022. Todos los derechos reservados.</p>
         </div>
     </footer>
-
+    <script src="../Js/bootstrap.bundle.min.js"></script>
 
 </body>
 

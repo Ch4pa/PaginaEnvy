@@ -9,10 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-     --><link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../Css/style.css">
-
     <title>ENVY</title>
 </head>
 
@@ -41,14 +39,29 @@
 
             </div>
 
-
-            <ul class="menuItems">
-
-                <li class="nav__items"><a href="../inicio.html" class="items underline-hover">Inicio</a></li>
-                <li class="nav__items"><a href="#" class="items underline-hover">Productos</a></li>
-                <li class="nav__items"><a href="./contacto.html" class="items underline-hover">Contacto</a></li>
-                <li class="nav__items"><a href="./envios.html" class="items underline-hover">Envios</a></li>
-                <li class="nav__items"><a href="./faqs.html" class="items underline-hover">FAQs</a></li>
+            <ul class="nav nav-pills d-flex flex-row">
+                <li class="nav-item">
+                    <a class="nav-link underline-hover" aria-current="page" href="../inicio.html">Inicio</a>
+                </li>
+                <li class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Productos
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Remeras</a></li>
+                        <li><a class="dropdown-item" href="#">Buzos</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link underline-hover" href="./contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link underline-hover" href="./envios.html">Envios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link underline-hover" href="./faqs.html">FAQs</a>
+                </li>
             </ul>
 
             <h4 class="paginaActual">Productos</h4>
@@ -63,34 +76,32 @@
                 <a href=""><img src="../Assets/imagenes/buzo2.png" class="ropa" alt=""></a>
                 <h4 class="productoText">Remera Angels</h4>
                 <span itemprop="price">$5000</span>
-
             </div>
             <div class="productos">
-                <img src="../Assets/imagenes/buzo2.png" class="ropa" alt="">
+                <a href=""><img src="../Assets/imagenes/buzo2.png" class="ropa" alt=""></a>
                 <h4 class="productoText">Buzo black</h4>
                 <span itemprop="price">$5000</span>
             </div>
             <div class="productos">
-                <img src="../Assets/imagenes/buzo2.png" class="ropa" alt="">
+                <a href=""><img src="../Assets/imagenes/buzo2.png" class="ropa" alt=""></a>
                 <h4 class="productoText">Remera Star</h4>
                 <span itemprop="price">$5000</span>
             </div>
             <div class="productos">
-                <img src="../Assets/imagenes/buzo2.png" class="ropa" alt="">
+                <a href=""><img src="../Assets/imagenes/buzo2.png" class="ropa" alt=""></a>
                 <h4 class="productoText">Remera Star</h4>
                 <span itemprop="price">$5000</span>
             </div>
             <div class="productos">
-                <img src="../Assets/imagenes/buzo2.png" class="ropa" alt="">
+                <a href=""><img src="../Assets/imagenes/buzo2.png" class="ropa" alt=""></a>
                 <h4 class="productoText">Remera Star</h4>
                 <span itemprop="price">$5000</span>
             </div>
             <div class="productos">
-                <img src="../Assets/imagenes/buzo2.png" class="ropa" alt="">
+                <a href=""><img src="../Assets/imagenes/buzo2.png" class="ropa" alt=""></a>
                 <h4 class="productoText">Remera Star</h4>
                 <span itemprop="price">$5000</span>
             </div>
-
         </section>
 
     </main>
@@ -109,20 +120,14 @@
             </ul>
         </div>
         <div class="boxRedes">
-            <a href="#" class="itemsRedes"><img src="../Assets/imagenes/4096262.png" class="imgRedes" alt=""></a>
-            <a href="#" class="itemsRedes"><img src="../Assets/imagenes/icone-du-logo-whatsapp-noir.png"
-                    class="imgRedes" alt=""></a>
+            <a href="https://www.instagram.com/envy.arg/" target="_blank" class="itemsRedes"><img src="../Assets/imagenes/4096262.png" class="imgRedes" alt=""></a>
+            <a href="#" class="itemsRedes"><img src="../Assets/imagenes/icone-du-logo-whatsapp-noir.png" class="imgRedes" alt=""></a>
             <a href="#" class="itemsRedes"><img src="../Assets/imagenes/20673 (1).png" class="imgRedes" alt=""></a>
         </div>
         <div class="boxDerechos">
             <p>Copyright ENVY - 2022. Todos los derechos reservados.</p>
         </div>
     </footer>
-
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script> -->
-
     <script src="../Js/bootstrap.bundle.min.js"></script>
 </body>
 

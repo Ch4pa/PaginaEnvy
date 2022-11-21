@@ -6,10 +6,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./Css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./Css/style.css">
     <title>ENVY</title>
 </head>
 
@@ -39,13 +40,29 @@
             </div>
 
 
-            <ul class="menuItems">
-
-                <li class="nav__items"><a href="#" class="items underline-hover">Inicio</a></li>
-                <li class="nav__items"><a href="./Pages/productos.html" class="items underline-hover">Productos</a></li>
-                <li class="nav__items"><a href="./Pages/contacto.html" class="items underline-hover">Contacto</a></li>
-                <li class="nav__items"><a href="./Pages/envios.html" class="items underline-hover">Envios</a></li>
-                <li class="nav__items"><a href="./Pages/faqs.html" class="items underline-hover">FAQs</a></li>
+            <ul class="nav nav-pills d-flex flex-row">
+                <li class="nav-item">
+                    <a class="nav-link underline-hover" aria-current="page" href="./inicio.html">Inicio</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Productos
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Remeras</a></li>
+                        <li><a class="dropdown-item" href="#">Buzos</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link underline-hover" href="./Pages/contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link underline-hover" href="./Pages/envios.html">Envios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link underline-hover" href="./Pages/faqs.html">FAQs</a>
+                </li>
             </ul>
 
             <h4 class="paginaActual">Inicio</h4>
@@ -63,7 +80,7 @@
 
             </div>
             <div class="productos">
-                <img src="./Assets/imagenes/BACK 01.png" class="ropa" alt="">
+                <img src="./Assets/imagenes/buzo2.png" class="ropa" alt="">
                 <h4 class="productoText">Buzo black</h4>
                 <span itemprop="price">$5000</span>
             </div>
@@ -94,7 +111,7 @@
 
     <footer class="piedepagina">
         <div class="contentfooter">
-            <img src="../Assets/imagenes/logo fondo negro.jpg" class="imgFooter" alt="">
+            <img src="./Assets/imagenes/logo fondo negro.jpg" class="imgFooter" alt="">
 
 
             <ul class="menuItems2">
@@ -107,17 +124,17 @@
             </ul>
         </div>
         <div class="boxRedes">
-            <a href="#" class="itemsRedes"><img src="./Assets/imagenes/4096262.png" class="imgRedes" alt=""></a>
+            <a href="https://www.instagram.com/envy.arg/" target="_blank" class="itemsRedes"><img src="./Assets/imagenes/4096262.png" class="imgRedes" alt=""></a>
             <a href="#" class="itemsRedes"><img src="./Assets/imagenes/icone-du-logo-whatsapp-noir.png" class="imgRedes"
                     alt=""></a>
             <a href="#" class="itemsRedes"><img src="./Assets/imagenes/20673 (1).png" class="imgRedes" alt=""></a>
         </div>
         <div class="boxDerechos">
-            <p >Copyright ENVY - 2022. Todos los derechos reservados.</p>
+            <p>Copyright ENVY - 2022. Todos los derechos reservados.</p>
         </div>
     </footer>
 
-
+    <script src="./Js/bootstrap.bundle.min.js"></script>
 
 </body>
 
