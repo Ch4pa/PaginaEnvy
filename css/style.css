@@ -60,6 +60,11 @@ p{
     min-width: 6rem;
 }
 
+main{
+    margin: 40px 0;
+}
+
+
 /* Oferta envio */
 
 .precioEnvio {
@@ -116,6 +121,7 @@ p{
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
+    gap: 20px;
 }
 
 .logo {
@@ -164,7 +170,8 @@ p{
     
 }
 .nav-link{
-    padding: 0.5rem 10px;
+    padding: 0.5rem 0px;
+    
 }
 
 
@@ -186,6 +193,7 @@ p{
     font-weight: bold;
     display: flex;
     align-items: center;
+
 }
 
 /* Productos */
@@ -215,6 +223,7 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
+   
 }
 
 .productos span {
@@ -223,6 +232,16 @@ p{
     margin-top: 5px;
 }
 
+.col{
+    margin-top: 15px;
+}
+.container{
+    gap: 15px;
+}
+
+span{
+    margin-top: 7px;
+}
 .ropa {
     height: 350px;
     width: 350px;
