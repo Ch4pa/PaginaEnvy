@@ -1,0 +1,512 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+
+.navbar {
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+}
+
+nav {
+    padding-left: 0;
+
+}
+
+ul {
+    margin: 0px !important;
+    padding: 0px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+}
+::after{
+    color: black;
+}
+.dropdown-menu{
+    color: black;
+}
+a {
+    color: black;
+}
+
+.h1, .h2,.h3,.h4, .h5, .h6, h1, h2, h3, h4, h5, h6 
+    {
+    padding: 0;
+    margin: 0;
+}
+p{
+    margin-bottom: 0;
+}
+.dropdown-toggle::after{
+    display: inline-block;
+    margin-left: 0;
+    vertical-align: 0.255em;
+    content: "";
+    border-top: 0em solid; 
+}
+
+.dropdown-menu{
+    min-width: 7rem;
+} 
+
+.dropdown-menu {
+    min-width: 6rem;
+}
+
+main{
+    margin: 40px 0;
+}
+
+
+/* Oferta envio */
+
+.precioEnvio {
+    width: 100%;
+    height: 10%;
+}
+
+.envioText {
+    width: 100%;
+    background-color: black;
+    font-size: 1rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* Login */
+
+.login {
+    height: 20%;
+    width: 95%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+}
+
+.lineaSeparar {
+    background-color: black;
+    width: 2px;
+    height: 16px;
+}
+
+.imgLogin,
+.imgcart {
+    cursor: pointer;
+    font-size: 1rem;
+
+}
+
+.imgcart {
+    height: 25px;
+    width: 25px;
+}
+
+/* Logo y nav */
+
+.nav {
+    height: 70%;
+    text-align: center;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    height: 60%;
+    display: flex;
+    align-items: center;
+}
+
+.logo a img {
+    max-width: 243px;
+    max-height: 73px;
+
+}
+
+.menuItems {
+    height: 15%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+
+}
+
+.nav-item {
+    color: black;
+    font-size: 1.1rem;
+}
+
+.nav__items {
+    list-style: none;
+}
+
+.items {
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    font-weight: bold;
+    list-style: none;
+    color: black;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.nav-link, .nav-link:hover {
+    color: black;
+    
+}
+.nav-link{
+    padding: 0.5rem 0px;
+    
+}
+
+
+.underline-hover::after {
+    content: "";
+    height: 2px;
+    width: 0;
+    background-color: rgb(0, 0, 0);
+    display: block;
+    transition: ease-in-out 300ms;
+}
+.underline-hover:hover::after {
+    width: 100%;
+}
+
+.paginaActual {
+    height: 35%;
+    font-size: 1.1rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+
+}
+
+/* Productos */
+
+.mainProductos {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.mainMercado {
+    height: 100%;
+    max-width: 1300px;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+    row-gap: 30px;
+
+}
+
+.productoText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.productos span {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.col{
+    margin-top: 15px;
+}
+.container{
+    gap: 15px;
+}
+
+span{
+    margin-top: 7px;
+}
+.ropa {
+    height: 350px;
+    width: 350px;
+}
+
+/* Inf Contacto */
+
+.mainContacto {
+    height: auto;
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.page {
+    height: 10%;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.pageText {
+    font-size: 1rem;
+}
+
+.inputsContenedor {
+    height: 70%;
+    width: 45%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 70px;
+    row-gap: 10px;
+}
+
+.inputsform {
+
+    border-radius: 5px;
+    width: 100%;
+    height: 12%;
+    border-radius: 70px;
+}
+
+.textform {
+    font-size: 1rem;
+    text-align: start;
+}
+
+.boxButton {
+    height: 15%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputsButton {
+    height: 60%;
+    width: 10%;
+    font-size: 1rem;
+    background-color: black;
+    color: white;
+    border-radius: 70px;
+    text-transform: uppercase;
+    transition: background .5s;
+    cursor: pointer;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+/* Contacto con bootstrrap */
+
+.contenedormain{
+    height: 80%;
+}
+.mb-3 {
+    width: 100%;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #030303;
+    border-color: #070707;
+  }
+  .btn-primary:hover {
+    color: #fff;
+    background-color: #030303;
+    border-color: #070707;
+  }
+  .btn-check:focus + .btn-primary, .btn-primary:focus {
+    color: #fff;
+    background-color: #030303;
+    border-color: #030303;
+    box-shadow: 0 0 0 0.25rem rgba(5, 5, 5,1 );
+  }
+  .btn-check:checked + .btn-primary, .btn-check:active + .btn-primary, .btn-primary:active, .btn-primary.active, .show > .btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #070707;
+    border-color: #070707;
+  }
+  .btn-check:checked + .btn-primary:focus, .btn-check:active + .btn-primary:focus, .btn-primary:active:focus, .btn-primary.active:focus, .show > .btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.25rem rgba(5, 5, 5, 1 );
+  }
+  .btn-primary:disabled, .btn-primary.disabled {
+    color: #fff;
+    background-color: #070707;
+    border-color: #050505;
+  }
+
+  .form-control:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #000000;
+    outline: 0;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+
+/* Envio */
+
+.mainEnvio {
+    height: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.envio {
+    width: 80%;
+    height: 40%;
+    font-size: 1rem;
+
+}
+
+/* FAQs */
+
+.mainFaqs {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+.mainText {
+    font-size: 1rem;
+    width: 80%;
+    height: 100%;
+
+}
+
+.faqsHead {
+    height: 10%;
+    margin-top: 15px;
+}
+
+.faqsMain {
+    height: 90%;
+    
+}
+
+
+/* Footer */
+
+.piedepagina {
+    height: 30vh;
+    background-color: black;
+    color: white;
+
+}
+
+.contentfooter {
+    background-color: black;
+    height: 40%;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.contentfooter img {
+    height: 50%;
+}
+
+.imgFooter {
+    margin-top: 10px;
+    max-width: 150px;
+    max-height: 150px;
+    border-color: #000000;
+}
+
+.menuItems2,
+.nav_items,
+.items2, .items2:hover {
+    background-color: black;
+    color: white;
+}
+
+.menuItems2 {
+    height: 40%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    list-style: none;
+}
+
+.items2 {
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.boxRedes {
+    height: 18%;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.itemsRedes {
+    background-color: black;
+}
+
+.imgRedes {
+    filter: invert(100%);
+    width: 35px;
+    height: 35px;
+
+}
+
+.boxDerechos {
+    height: 20%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.boxDerechos p {
+    background-color: black;
+    font-size: 1rem;
+}

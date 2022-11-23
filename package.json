@@ -1,0 +1,25 @@
+{
+  "name": "proy",
+  "version": "1.0.0",
+  "description": "proyecto de coder sitio web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss sass/style.scss css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ch4pa/PaginaEnvy.git"
+  },
+  "author": "Mateo sabelli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ch4pa/PaginaEnvy/issues"
+  },
+  "homepage": "https://github.com/Ch4pa/PaginaEnvy#readme",
+  "dependencies": {
+    "node-sass": "^8.0.0",
+    "nodemon": "^2.0.20"
+  }
+}
