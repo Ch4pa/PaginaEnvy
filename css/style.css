@@ -121,7 +121,7 @@ main{
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 25px;
 }
 
 .logo {
@@ -223,7 +223,8 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-   
+   font-size: 1.1rem;
+   font-weight: bolder;
 }
 
 .productos span {
@@ -238,6 +239,7 @@ main{
 .container{
     gap: 15px;
 }
+
 
 span{
     margin-top: 7px;
