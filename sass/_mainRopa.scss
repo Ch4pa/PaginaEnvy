@@ -1,0 +1,54 @@
+.mainProductos{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+
+        .mainMercado {
+            height: 100%;
+            max-width: 1300px;
+            margin-top: 50px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            column-gap: 30px;
+            row-gap: 30px;
+
+                .productos{
+                    a{
+                        .ropa {
+                            height: 350px;
+                            width: 350px;
+                            object-fit: contain;
+                        }
+                    }
+                    .productoText {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    span {
+                        display: flex;
+                        justify-content: center;
+                        margin-top: 5px;
+                        margin-top: 7px;
+                        text-align: center;
+                    }
+                }
+                
+                
+                .ropa {
+                    height: 350px;
+                    width: 350px;
+                    object-fit: contain;
+                }
+                
+        
+        }
+        .container {
+            gap: 15px;
+            flex-wrap: nowrap;
+        }
+}

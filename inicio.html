@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./Css/style.css">
+    <link rel="stylesheet" href="./css/estilos.css">
     <title>ENVY</title>
 </head>
 
@@ -50,8 +50,8 @@
                         Productos
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="./Pages/productos.html">Remeras</a></li>
-                        <li><a class="dropdown-item" href="./Pages/productos.html">Buzos</a></li>
+                        <li><a class="dropdown-item" href="./Pages/remeras.html">Remeras</a></li>
+                        <li><a class="dropdown-item" href="./Pages/buzos.html">Buzos</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
@@ -70,71 +70,41 @@
 
     </header>
 
-
-    
-    <main>
-        <div class="container text-center">
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
-              <div class="col">
+    <main class="mainProductos container">
+        <section class="mainMercado">
+            <div class="productos">
                 <a href=""><img src="./Assets/imagenes/buzo2.png" class="ropa" alt=""></a>
-                <h5 class="productoText">Remera Angels</h5>
+                <h4 class="productoText">Remera Angels</h4>
                 <span itemprop="price">$5000</span>
-              </div>
-              <div class="col">
-                <a href=""><img src="./Assets/imagenes/buzo2.png" class="ropa" alt=""></a>
-                <h5 class="productoText">Remera Angels</h5>
-                <span itemprop="price">$5000</span>
-              </div>
-              <div class="col">
-                <a href=""><img src="./Assets/imagenes/buzo2.png" class="ropa" alt=""></a>
-                <h5 class="productoText">Remera Angels</h5>
-                <span itemprop="price">$5000</span>
-              </div>
-              <div class="col">
-                <a href=""><img src="./Assets/imagenes/buzo2.png" class="ropa" alt=""></a>
-                <h5 class="productoText">Remera Angels</h5>
-                <span itemprop="price">$5000</span>
-              </div>
             </div>
-          </div>
-
-
-
-
-        <!-- <div class="container text-center">
-            <div class="row row-cols-3">
-              <div class="col">
-                <a href=""><img src="./Assets/imagenes/buzo2.png" class="ropa" alt=""></a>
-                <h5 class="productoText">Remera Angels</h5>
+            <div class="productos">
+                <img src="./Assets/imagenes/remera-e-explorer-frente1-13bc745ed8339a9d8716651339639800-480-0.png" class="ropa" alt="">
+                <h4 class="productoText">Buzo black</h4>
                 <span itemprop="price">$5000</span>
-              </div>
-              <div class="col">
-                <a href=""><img src="./Assets/imagenes/buzo2.png" class="ropa" alt=""></a>
-                <h5 class="productoText">Remera Angels</h5>
-                <span itemprop="price">$5000</span>
-              </div>
-              <div class="col">
-                <a href=""><img src="./Assets/imagenes/buzo2.png" class="ropa" alt=""></a>
-                <h5 class="productoText">Remera Angels</h5>
-                <span itemprop="price">$5000</span>
-              </div>
-              <div class="col">
-                <a href=""><img src="./Assets/imagenes/buzo2.png" class="ropa" alt=""></a>
-                <h5 class="productoText">Remera Angels</h5>
-                <span itemprop="price">$5000</span>
-              </div>
-              <div class="col">
-                <a href=""><img src="./Assets/imagenes/buzo2.png" class="ropa" alt=""></a>
-                <h5 class="productoText">Remera Angels</h5>
-                <span itemprop="price">$5000</span>
-              </div>
-              <div class="col">
-                <a href=""><img src="./Assets/imagenes/buzo2.png" class="ropa" alt=""></a>
-                <h5 class="productoText">Remera Angels</h5>
-                <span itemprop="price">$5000</span>
-              </div>
             </div>
-          </div> -->
+            <div class="productos">
+                <img src="./Assets/imagenes/buzo2.png" class="ropa" alt="">
+                <h4 class="productoText">Remera Star</h4>
+                <span itemprop="price">$5000</span>
+            </div>
+            <div class="productos">
+                <img src="./Assets/imagenes/remera-e-explorer-frente1-13bc745ed8339a9d8716651339639800-480-0.png" class="ropa" alt="">
+                <h4 class="productoText">Remera Star</h4>
+                <span itemprop="price">$5000</span>
+            </div>
+            <div class="productos">
+                <img src="./Assets/imagenes/buzo2.png" class="ropa" alt="">
+                <h4 class="productoText">Remera Star</h4>
+                <span itemprop="price">$5000</span>
+            </div>
+            <div class="productos">
+                <img src="./Assets/imagenes/remera-e-explorer-frente1-13bc745ed8339a9d8716651339639800-480-0.png" class="ropa" alt="">
+                <h4 class="productoText">Remera Star</h4>
+                <span itemprop="price">$5000</span>
+            </div>
+
+        </section>
+
     </main>
 
     <footer class="piedepagina">
@@ -152,10 +122,8 @@
             </ul>
         </div>
         <div class="boxRedes">
-            <a href="https://www.instagram.com/envy.arg/" target="_blank" class="itemsRedes"><img
-                    src="./Assets/imagenes/4096262.png" class="imgRedes" alt=""></a>
-            <a href="#" class="itemsRedes"><img src="./Assets/imagenes/icone-du-logo-whatsapp-noir.png" class="imgRedes"
-                    alt=""></a>
+            <a href="https://www.instagram.com/envy.arg/" target="_blank" class="itemsRedes"><img src="./Assets/imagenes/4096262.png" class="imgRedes" alt=""></a>
+            <a href="#" class="itemsRedes"><img src="./Assets/imagenes/icone-du-logo-whatsapp-noir.png" class="imgRedes"alt=""></a>
             <a href="#" class="itemsRedes"><img src="./Assets/imagenes/20673 (1).png" class="imgRedes" alt=""></a>
         </div>
         <div class="boxDerechos">

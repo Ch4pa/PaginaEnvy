@@ -1,0 +1,21 @@
+.mainContacto {
+    height: auto;
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    .page {
+        height: 10%;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        .pageText {
+            font-size: 1rem;
+        }
+    }
+
+}
