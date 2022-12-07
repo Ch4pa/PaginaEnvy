@@ -1,9 +1,10 @@
+
 .piedepagina {
-    height: 30vh;
-    background-color: black;
+    height: auto;
+    background-color: map-get($colores, color-black);
     color: white;
     .contentfooter {
-        background-color: black;
+        background-color: map-get($colores, color-black);
         height: 40%;
         cursor: pointer;
         display: flex;
@@ -15,10 +16,10 @@
             margin-top: 10px;
             max-width: 150px;
             max-height: 150px;
-            border-color: #000000;
+            border-color: map-get($colores, color-black);
         }
         .menuItems2{
-            background-color: black;
+            background-color: map-get($colores, color-black);
             color: white;
             height: 40%;
             display: flex;
@@ -27,16 +28,16 @@
             gap: 15px;
             list-style: none;
             .nav_items{
-                background-color: black;
+                background-color: map-get($colores, color-black);
                 color: white;
                 .items2{
-                    background-color: black;
+                    background-color: map-get($colores, color-black);
                     color: white;
                     text-decoration: none;
                     font-size: 1rem;
                     cursor: pointer;
                     &:hover{
-                        background-color: black;
+                        background-color: map-get($colores, color-black);
                         color: white;
                     }
                 }
@@ -45,14 +46,14 @@
     }
     .boxRedes {
         height: 18%;
-        background-color: black;
+        background-color: map-get($colores, color-black);
         display: flex;
         flex-direction: row;
         gap: 20px;
         justify-content: center;
         align-items: center;
             .itemsRedes {
-                background-color: black;
+                background-color: map-get($colores, color-black);
                     .imgRedes {
                         filter: invert(100%);
                         width: 35px;
@@ -63,12 +64,12 @@
     }
     .boxDerechos {
         height: 20%;
-        background-color: black;
+        background-color: map-get($colores, color-black);
         display: flex;
         align-items: center;
         justify-content: center;
         p {
-            background-color: black;
+            background-color: map-get($colores, color-black); 
             font-size: 1rem;
         }
     }

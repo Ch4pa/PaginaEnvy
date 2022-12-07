@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   background-color: white; }
 
 ul {
@@ -49,6 +49,7 @@ main {
   .navbar .login {
     height: 20%;
     width: 95%;
+    position: relative;
     display: flex;
     justify-content: end;
     align-items: center;
@@ -65,48 +66,41 @@ main {
       width: 25px;
       cursor: pointer;
       font-size: 1rem; }
-  .navbar .nav {
-    height: 70%;
-    text-align: center;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    padding-left: 0; }
-    .navbar .nav .logo {
-      height: 60%;
-      display: flex;
-      align-items: center; }
-      .navbar .nav .logo .logo a img {
-        max-width: 243px;
-        max-height: 73px; }
-    .navbar .nav .nav-item {
-      color: black;
-      font-size: 1.1rem; }
-      .navbar .nav .nav-item .nav-link {
-        color: black;
-        padding: 0.5rem 0px; }
-        .navbar .nav .nav-item .nav-link:hover {
-          color: black; }
-      .navbar .nav .nav-item .underline-hover::after {
-        content: "";
-        height: 2px;
-        width: 0;
-        background-color: black;
-        display: block;
-        transition: ease-in-out 300ms; }
-        .navbar .nav .nav-item .underline-hover::after .underline-hover:hover::after {
-          width: 100%; }
-    .navbar .nav .dropdown-menu {
-      min-width: 6rem;
-      color: black; }
-  .navbar .paginaActual {
-    height: 35%;
-    font-size: 1.1rem;
-    font-weight: bold;
+
+.nav {
+  height: 70%;
+  text-align: center;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-left: 0; }
+  .nav .logo {
+    height: 60%;
     display: flex;
     align-items: center; }
+    .nav .logo .logo a img {
+      max-width: 243px;
+      max-height: 73px; }
+  .nav .nav-item {
+    color: black;
+    font-size: 1.1rem; }
+    .nav .nav-item .nav-link {
+      color: black;
+      padding: 0.5rem 0px; }
+      .nav .nav-item .nav-link:hover {
+        color: black; }
+  .nav .dropdown-menu {
+    min-width: 6rem;
+    color: black; }
+
+.paginaActual {
+  height: 35%;
+  font-size: 1.1rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center; }
 
 .mainProductos {
   width: 100%;
@@ -124,20 +118,23 @@ main {
     align-items: center;
     column-gap: 30px;
     row-gap: 30px; }
-    .mainProductos .mainMercado .productos a .ropa {
-      height: 350px;
-      width: 350px;
-      object-fit: contain; }
-    .mainProductos .mainMercado .productos .productoText {
+    .mainProductos .mainMercado .productos {
       display: flex;
+      flex-direction: column;
       justify-content: center;
-      align-items: center; }
-    .mainProductos .mainMercado .productos span {
-      display: flex;
-      justify-content: center;
-      margin-top: 5px;
-      margin-top: 7px;
-      text-align: center; }
+      align-items: center;
+      gap: 10px; }
+      .mainProductos .mainMercado .productos a .ropa {
+        height: 350px;
+        width: 350px;
+        object-fit: contain; }
+      .mainProductos .mainMercado .productos .productoText {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.1rem; }
+      .mainProductos .mainMercado .productos .price {
+        font-size: 2rem; }
     .mainProductos .mainMercado .ropa {
       height: 350px;
       width: 350px;
@@ -145,69 +142,6 @@ main {
   .mainProductos .container {
     gap: 15px;
     flex-wrap: nowrap; }
-
-.piedepagina {
-  height: 30vh;
-  background-color: black;
-  color: white; }
-  .piedepagina .contentfooter {
-    background-color: black;
-    height: 40%;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; }
-    .piedepagina .contentfooter .imgFooter {
-      height: 50%;
-      margin-top: 10px;
-      max-width: 150px;
-      max-height: 150px;
-      border-color: #000000; }
-    .piedepagina .contentfooter .menuItems2 {
-      background-color: black;
-      color: white;
-      height: 40%;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      gap: 15px;
-      list-style: none; }
-      .piedepagina .contentfooter .menuItems2 .nav_items {
-        background-color: black;
-        color: white; }
-        .piedepagina .contentfooter .menuItems2 .nav_items .items2 {
-          background-color: black;
-          color: white;
-          text-decoration: none;
-          font-size: 1rem;
-          cursor: pointer; }
-          .piedepagina .contentfooter .menuItems2 .nav_items .items2:hover {
-            background-color: black;
-            color: white; }
-  .piedepagina .boxRedes {
-    height: 18%;
-    background-color: black;
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    justify-content: center;
-    align-items: center; }
-    .piedepagina .boxRedes .itemsRedes {
-      background-color: black; }
-      .piedepagina .boxRedes .itemsRedes .imgRedes {
-        filter: invert(100%);
-        width: 35px;
-        height: 35px; }
-  .piedepagina .boxDerechos {
-    height: 20%;
-    background-color: black;
-    display: flex;
-    align-items: center;
-    justify-content: center; }
-    .piedepagina .boxDerechos p {
-      background-color: black;
-      font-size: 1rem; }
 
 .mainContacto {
   height: auto;
@@ -226,6 +160,22 @@ main {
     text-align: center; }
     .mainContacto .page .pageText {
       font-size: 1rem; }
+  .mainContacto .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .mainContacto .container .boton {
+      width: 10%;
+      height: 30px;
+      border-radius: 10px;
+      background-color: #000000;
+      font-size: 1rem;
+      color: #ffff; }
+
+@media (max-width: 700px) {
+  .mainContacto .container .boton {
+    width: 20%; } }
 
 .mainEnvio {
   height: auto;
@@ -239,6 +189,98 @@ main {
     width: 80%;
     height: 40%;
     font-size: 1rem; }
+
+.mainFaqs {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px; }
+  .mainFaqs .mainText {
+    font-size: 1rem;
+    width: 80%;
+    height: 100%; }
+    .mainFaqs .mainText .faqsHead {
+      height: 10%;
+      margin-top: 15px; }
+  .mainFaqs .faqsMain {
+    height: 90%; }
+
+.piedepagina {
+  height: auto;
+  background-color: #000000;
+  color: white; }
+  .piedepagina .contentfooter {
+    background-color: #000000;
+    height: 40%;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .piedepagina .contentfooter .imgFooter {
+      height: 50%;
+      margin-top: 10px;
+      max-width: 150px;
+      max-height: 150px;
+      border-color: #000000; }
+    .piedepagina .contentfooter .menuItems2 {
+      background-color: #000000;
+      color: white;
+      height: 40%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 15px;
+      list-style: none; }
+      .piedepagina .contentfooter .menuItems2 .nav_items {
+        background-color: #000000;
+        color: white; }
+        .piedepagina .contentfooter .menuItems2 .nav_items .items2 {
+          background-color: #000000;
+          color: white;
+          text-decoration: none;
+          font-size: 1rem;
+          cursor: pointer; }
+          .piedepagina .contentfooter .menuItems2 .nav_items .items2:hover {
+            background-color: #000000;
+            color: white; }
+  .piedepagina .boxRedes {
+    height: 18%;
+    background-color: #000000;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center; }
+    .piedepagina .boxRedes .itemsRedes {
+      background-color: #000000; }
+      .piedepagina .boxRedes .itemsRedes .imgRedes {
+        filter: invert(100%);
+        width: 35px;
+        height: 35px; }
+  .piedepagina .boxDerechos {
+    height: 20%;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .piedepagina .boxDerechos p {
+      background-color: #000000;
+      font-size: 1rem; }
+
+.underline-hover::after {
+  content: "";
+  height: 2px;
+  width: 0;
+  background-color: black;
+  display: block;
+  transition: ease-in-out 300ms; }
+
+.underline-hover:hover::after {
+  width: 100%; }
 
 /* Contacto con bootstrrap */
 .contenedormain {

@@ -1,11 +1,26 @@
 @import "reset";
+@import "variables";
+@import "mixins";
 @import "header";
 @import "mainRopa";
-@import "footer";
 @import "mainContacto";
 @import "mainEnvio";
-@import "variables";
+@import "mainFaqs";
+@import "footer";
 
+
+.underline-hover::after {
+    content: "";
+    height: 2px;
+    width: 0;
+    background-color: rgb(0, 0, 0);
+    display: block;
+    transition: ease-in-out 300ms;
+    
+}
+.underline-hover:hover::after {
+    width: 100%;
+}
 
 
 /* Contacto con bootstrrap */

@@ -17,5 +17,31 @@
             font-size: 1rem;
         }
     }
+    .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
 
+        .boton{
+            width: 10%;
+            height: 30px;
+            border-radius: 10px;
+            background-color: map-get($colores,color-black);
+            font-size: map-get($sizes, font );
+            color: map-get($colores, color-white);
+        }
+    }
+}
+
+@media (max-width: 700px){
+
+    .mainContacto {
+        .container{
+            .boton{
+                width: 20%;
+                
+        }
+    }
+}
 }

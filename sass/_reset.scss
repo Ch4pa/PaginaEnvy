@@ -1,8 +1,9 @@
+@import"variables";
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Oswald', sans-serif;
+    font-family: $Font-page;
     background-color: rgb(255, 255, 255);
 }
 

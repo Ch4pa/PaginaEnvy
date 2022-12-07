@@ -17,6 +17,8 @@
             row-gap: 30px;
 
                 .productos{
+                            @include flex-column-center;
+                            gap: 10px;
                     a{
                         .ropa {
                             height: 350px;
@@ -25,16 +27,11 @@
                         }
                     }
                     .productoText {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
+                        @include flex-center;
+                        font-size: 1.1rem;
                     }
-                    span {
-                        display: flex;
-                        justify-content: center;
-                        margin-top: 5px;
-                        margin-top: 7px;
-                        text-align: center;
+                    .price {
+                        font-size: 2rem;
                     }
                 }
                 
