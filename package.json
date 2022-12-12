@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/Ch4pa/PaginaEnvy#readme",
   "dependencies": {
+    "firebase": "^9.15.0",
     "node-sass": "^8.0.0",
     "nodemon": "^2.0.20"
   }
