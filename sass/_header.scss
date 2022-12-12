@@ -29,18 +29,22 @@
         justify-content: end;
         align-items: center;
         gap: 10px;
-
+        
         .lineaSeparar {
             background-color: black;
             width: 2px;
             height: 16px;
         }
-
-        .imgLogin {
-            cursor: pointer;
-            font-size: 1rem;
-
+        a{
+            list-style: none;
+            text-decoration: none;
+            .imgLogin {
+                cursor: pointer;
+                font-size: 1rem;
+                font-weight:bolder;
+            }
         }
+        
 
         .imgcart {
             height: 25px;
@@ -61,6 +65,7 @@
     align-items: center;
     gap: 20px;
     padding-left: 0;
+    
 
     .logo {
         height: 60%;
