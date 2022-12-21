@@ -1,27 +1,36 @@
-.mainError{
-    height: 20vh;
-    width: 100%;
-    text-align: center;
-    margin-top: 15vh;
-    
+.mainError {
+  height: 20vh;
+  width: 100%;
+  text-align: center;
+  margin-top: 15vh;
+
+  .textoError {
+    font-family: 'Zen Dots', cursive;
+    font-weight: bolder;
+    font-size: 2rem;
+    animation-duration: 2s;
+    animation-name: slidein;
+
+  }
+
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
+
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .mainError {
+    height: 15vh;
     .textoError {
-        font-family: 'Zen Dots', cursive;
-        font-weight: bolder;
-        font-size: 2rem;
-        animation-duration: 3s;
-      animation-name: slidein;
-      
-      }
-      
-      @keyframes slidein {
-        from {
-          margin-left: 100%;
-          width: 300%
-        }
-      
-        to {
-          margin-left: 0%;
-          width: 100%;
-        }
-      }
+      font-size: 1rem;
+    }
+  }
 }

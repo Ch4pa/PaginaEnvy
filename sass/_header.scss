@@ -28,8 +28,7 @@
         display: flex;
         justify-content: end;
         align-items: center;
-        gap: 10px;
-        
+        gap: 5px;
         .lineaSeparar {
             background-color: black;
             width: 2px;
@@ -41,7 +40,6 @@
             .imgLogin {
                 cursor: pointer;
                 font-size: 1rem;
-                font-weight:bolder;
             }
         }
         
