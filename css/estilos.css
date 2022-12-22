@@ -85,8 +85,8 @@ main {
     display: flex;
     align-items: center; }
     .nav .logo .logo a img {
-      max-width: 243px;
-      max-height: 73px; }
+      max-width: 200px;
+      max-height: 100px; }
   .nav .nav-item {
     color: black;
     font-size: 1.1rem; }
