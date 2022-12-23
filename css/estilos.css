@@ -84,7 +84,7 @@ main {
     height: 60%;
     display: flex;
     align-items: center; }
-    .nav .logo .logo a img {
+    .nav .logo a .imgLogo {
       max-width: 200px;
       max-height: 100px; }
   .nav .nav-item {
@@ -182,6 +182,12 @@ main {
       background-color: #000000;
       font-size: 1rem;
       color: #ffff; }
+    .mainContacto .container .botonEnviar {
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: medium; }
 
 @media (max-width: 700px) {
   .mainContacto .container .boton {
@@ -222,7 +228,8 @@ main {
   height: 20vh;
   width: 100%;
   text-align: center;
-  margin-top: 15vh; }
+  margin-top: 15vh;
+  overflow-x: hidden; }
   .mainError .textoError {
     font-family: 'Zen Dots', cursive;
     font-weight: bolder;

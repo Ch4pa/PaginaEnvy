@@ -31,6 +31,13 @@
             font-size: map-get($sizes, font );
             color: map-get($colores, color-white);
         }
+        .botonEnviar{
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: medium;
+        }
     }
 }
 

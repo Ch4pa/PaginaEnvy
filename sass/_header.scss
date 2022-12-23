@@ -29,20 +29,23 @@
         justify-content: end;
         align-items: center;
         gap: 5px;
+
         .lineaSeparar {
             background-color: black;
             width: 2px;
             height: 16px;
         }
-        a{
+
+        a {
             list-style: none;
             text-decoration: none;
+
             .imgLogin {
                 cursor: pointer;
                 font-size: 1rem;
             }
         }
-        
+
 
         .imgcart {
             height: 25px;
@@ -63,25 +66,18 @@
     align-items: center;
     gap: 20px;
     padding-left: 0;
-    
+
 
     .logo {
         height: 60%;
         display: flex;
         align-items: center;
 
-        .logo{
-            a{
-                img{
-                    max-width: 200px;
-                    max-height: 100px;
-                }
-                
-            }
-             
-            
-
+        a .imgLogo {
+            max-width: 200px;
+            max-height: 100px;
         }
+
     }
 
     .nav-item {
