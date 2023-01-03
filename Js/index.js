@@ -80,7 +80,7 @@ do {
 
 
 
-let ganador = false
+/* let ganador = false
 while( !ganador){
     let adivinanza = prompt(`Que fdf`)
-}
+} */
