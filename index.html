@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/estilos.css">
     <link rel="shortcut icon" href="./Assets/imagenes/Mateosabelli-removebg-preview.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <title> Envy - Marca de Ropa </title>
 </head>
 
@@ -27,26 +28,90 @@
         </div>
 
         <div class="login">
-            <a href="./Pages/error.html" title="Iniciar Sesion">
+
+            <div class="box" >
+                <input type="text" name="search" placeholder="Buscar producto" class="src" id="searchBox" autocomplete="off">
+            </div>
+            <button title="Iniciar Sesion" class="iniciarSesion" id="btnIniciarS"  data-bs-toggle="modal" data-bs-target="#idModalIniciarSesion">
                 <h2 class="imgLogin underline-hover">Iniciar Sesion</h2>
-            </a>
+            </button>
             <div class="lineaSeparar"></div>
-            <a href="./Pages/error.html"></a>
-            <a href="./Pages/error.html" title="Crear Sesion">
+            <button title="Crear Sesion" class="crearSesion">
                 <h2 class="imgLogin underline-hover">Crear Sesion</h2>
-            </a>
+            </button>
             <div class="lineaSeparar"></div>
-            <a href="./Pages/error.html" title="Carrito de compra" ><img src="./Assets/imagenes/buy-svgrepo-com (1).svg" class="imgcart"
-                    alt="Carrito de compra" title="Carrito de compra"></a>
+            <button title="Carrito de compra" class="carrito " id="botonCarrito" data-bs-toggle="modal" data-bs-target="#idModalCarrito"><img
+                    src="./Assets/imagenes/buy-svgrepo-com (1).svg" class="imgcart" alt="Carrito de compra"
+                    title="Carrito de compra"></button>
         </div>
+
+
+
+        <!-- Modal Iniciar sesion -->
+        <div class="modal fade" id="idModalIniciarSesion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Iniciar Sesion</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" id="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="titulo" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="tituloInput" aria-describedby="name">
+                
+              </div>
+              <div class="mb-3">
+                <label for="autor" class="form-label">Apellido</label>
+                <input type="text" class="form-control" id="autorInput" aria-describedby="Apellido">
+                
+              </div>
+              <div class="mb-3">
+                <label for="precio" class="form-label">Email</label>
+                <input type="text" class="form-control" id="precioInput" aria-describedby="email">
+                
+              </div>
+            </form>
+          </div>
+          
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="text" id="guardarLibroBtn" class="btn btn-success" data-bs-dismiss="modal">Guardar Libro</button>
+          </div>
+        </div>
+      </div>
+    </div>
+        <div class="modal fade" id="idModalCarrito" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Carrito de Compras</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="modal-bodyCarrito">
+                  
+                </div>
+                <div class="row ml-ato">
+                  <p id="precioTotal"></p>
+                </div>
+                <div class="modal-footer">
+                  
+                  
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  <button type="button" data-bs-dismiss="modal" class="btn btn-success" id="botonFinalizarCompra">Finalizar Compra</button>
+                </div>
+              </div>
+            </div>
+          </div>
 
 
         <nav class="links nav">
 
             <div class="logo">
 
-                <a href="./index.html" title="Imagen logo"> <img src="./Assets/imagenes/Envy (2).png" class="imgLogo" alt="Imagen logo"
-                        title="Img logo"></a>
+                <a href="./index.html" title="Imagen logo"> <img src="./Assets/imagenes/Envy (2).png" class="imgLogo"
+                        alt="Imagen logo" title="Img logo"></a>
 
             </div>
 
@@ -56,8 +121,8 @@
                     <a class="nav-link underline-hover" aria-current="page" href="./index.html" title="Incio">Inicio</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle underline-hover" href="#" title="Productos" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
+                    <a class="nav-link dropdown-toggle underline-hover" href="#" title="Productos" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
                         Productos
                     </a>
                     <ul class="dropdown-menu">
@@ -87,43 +152,44 @@
                 Unisex.
             </p>
         </div>
-        <section class="mainMercado">
-            <div class="productos">
-                <a href="./Pages/error.html" title=" Buzo negra fria liviana"><img src="./Assets/imagenes/buzo2.png" class="ropa"
-                        alt=" buzo negra fria liviana" title=" Buzo negra fria liviana"></a>
+        <section class="mainMercado" id="inicioMercado">
+            <!-- <div class="productos">
+                <a href="./Pages/error.html" title=" Buzo negra fria liviana"><img src="./Assets/imagenes/buzo2.png"
+                        class="ropa" alt=" buzo negra fria liviana" title=" Buzo negra fria liviana"></a>
                 <h3 class="productoText">Buzo black</h3>
                 <span itemprop="price">$5000</span>
             </div>
             <div class="productos">
-                <a href="./Pages/error.html" title="Remera negra 100% algodon"><img src="./Assets/imagenes/Remera.png" class="ropa"
-                        alt="remera negra 100% algodon" title="Remera negra 100% algodon"></a>
+                <a href="./Pages/error.html" title="Remera negra 100% algodon"><img src="./Assets/imagenes/Remera.png"
+                        class="ropa" alt="remera negra 100% algodon" title="Remera negra 100% algodon"></a>
                 <h3 class="productoText">Remera RT</h3>
                 <span itemprop="price">$5000</span>
             </div>
             <div class="productos">
-                <a href="./Pages/error.html" title="Buzo gris fria liviana"><img src="./Assets/imagenes/buzo3.png" class="ropa"
-                        alt=" buzo gris fria liviana" title="Buzo gris fria liviana"></a>
+                <a href="./Pages/error.html" title="Buzo gris fria liviana"><img src="./Assets/imagenes/buzo3.png"
+                        class="ropa" alt=" buzo gris fria liviana" title="Buzo gris fria liviana"></a>
                 <h3 class="productoText">Buzo Monitor</h3>
                 <span itemprop="price">$5000</span>
             </div>
             <div class="productos">
-                <a href="./Pages/error.html" title="Remera blanca 100% algodon"><img src="./Assets/imagenes/Remera3.png" class="ropa"
-                        alt="remera blanca 100% algodon" title="Remera blanca 100% algodon"></a>
+                <a href="./Pages/error.html" title="Remera blanca 100% algodon"><img src="./Assets/imagenes/Remera3.png"
+                        class="ropa" alt="remera blanca 100% algodon" title="Remera blanca 100% algodon"></a>
                 <h3 class="productoText">Remera ST</h3>
                 <span itemprop="price">$5000</span>
             </div>
             <div class="productos">
-                <a href="./Pages/error.html" title="Buzo negra fria liviana"><img src="./Assets/imagenes/buzo4.png" class="ropa"
-                        alt=" buzo negra fria liviana" title="Buzo negra fria liviana"></a>
+                <a href="./Pages/error.html" title="Buzo negra fria liviana"><img src="./Assets/imagenes/buzo4.png"
+                        class="ropa" alt=" buzo negra fria liviana" title="Buzo negra fria liviana"></a>
                 <h3 class="productoText">Buzo Meteorite</h3>
                 <span itemprop="price">$5000</span>
             </div>
             <div class="productos">
-                <a href="./Pages/error.html" title="Remera negra 100% algodon"><img src="./Assets/imagenes/Remera-Negra-logomedio.png" class="ropa"
-                        alt="remera negra 100% algodon" title="Remera negra 100% algodon"></a>
+                <a href="./Pages/error.html" title="Remera negra 100% algodon"><img
+                        src="./Assets/imagenes/Remera-Negra-logomedio.png" class="ropa" alt="remera negra 100% algodon"
+                        title="Remera negra 100% algodon"></a>
                 <h3 class="productoText">Remera JK</h3>
                 <span itemprop="price">$5000</span>
-            </div>
+            </div> -->
 
         </section>
 
@@ -159,8 +225,19 @@
         </div>
     </footer>
 
-    
+<!-- Class -->
+    <script src="./Js/class.js"></script>
+<!-- Bootstrap -->
+    <script src="./Js/bootstrap.bundle.min.js"></script>
+
+<!-- jS propio -->
     <script src="./Js/index.js"></script>
+
+<!-- Sweet alert -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<!-- TOASTIFY -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 
 </body>
 

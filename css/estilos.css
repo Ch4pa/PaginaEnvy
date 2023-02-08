@@ -5,6 +5,9 @@
   font-family: "Oswald", sans-serif;
   background-color: white; }
 
+button {
+  border: 0px; }
+
 ul {
   margin: 0px !important;
   padding: 0px;
@@ -49,12 +52,33 @@ main {
       height: 100%; }
   .navbar .login {
     height: 20%;
-    width: 95%;
+    width: 89%;
     position: relative;
     display: flex;
     justify-content: end;
     align-items: center;
     gap: 5px; }
+    .navbar .login .box {
+      position: absolute;
+      left: 5%;
+      top: 50%;
+      transform: translate(-50%, -50%); }
+      .navbar .login .box .src {
+        padding: 9px 10px 10px 40px;
+        outline: none;
+        font-size: 1rem;
+        border-radius: 25px;
+        color: black;
+        border: 2px solid #000000;
+        background: #fff url("../Assets/imagenes/search-icon.png") no-repeat 9px center;
+        background-size: 25px;
+        width: 97px;
+        transition: all 0.8s; }
+        .navbar .login .box .src:hover {
+          width: 200px;
+          background-color: #fff;
+          border-color: black;
+          box-shadow: 0 0 3px #00000080; }
     .navbar .login .lineaSeparar {
       background-color: black;
       width: 2px;
@@ -70,6 +94,10 @@ main {
       width: 25px;
       cursor: pointer;
       font-size: 1rem; }
+
+::placeholder {
+  color: #000000;
+  font-size: 1rem; }
 
 .nav {
   height: 70%;
@@ -116,7 +144,7 @@ main {
   margin-bottom: 50px; }
   .mainProductos .TextoIndex {
     width: 100%;
-    height: 15vh;
+    height: 10vh;
     text-align: center; }
   .mainProductos .mainMercado {
     height: auto;
@@ -135,8 +163,8 @@ main {
       align-items: center;
       gap: 10px; }
       .mainProductos .mainMercado .productos a .ropa {
-        height: 350px;
-        width: 350px;
+        height: 400px;
+        width: 400px;
         object-fit: cover; }
       .mainProductos .mainMercado .productos .productoText {
         display: flex;
