@@ -173,6 +173,13 @@ main {
         font-size: 1rem; }
       .mainProductos .mainMercado .productos .price {
         font-size: 1.3rem; }
+      .mainProductos .mainMercado .productos .btnCarrito {
+        width: 150px;
+        height: 30px;
+        border-radius: 20px;
+        background-color: black;
+        font-size: 1.1rem;
+        color: white; }
     .mainProductos .mainMercado .ropa {
       height: 350px;
       width: 350px;
